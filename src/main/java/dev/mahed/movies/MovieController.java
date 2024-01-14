@@ -12,11 +12,9 @@ public class MovieController
 {
     // a new get method
     @GetMapping
-    public ResponseEntity<String> allMovies()
+    public ResponseEntity<String> getAllMovies()
     {
         // OK status is 200, ALL REST APIs should return proper status code
         return new ResponseEntity<String>("All Movies !!", HttpStatus.OK);
-
-        // in order to test above you canuse
     }
 }
